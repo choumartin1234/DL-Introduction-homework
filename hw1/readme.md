@@ -32,7 +32,7 @@ h = exp / exp.sum(axis = 1)
 
 + 符号问题 : 一开始代码 **写错了** , 发现 loss 训练出来是负数 , 且与accuracy为正相关 :
 
-  <img src="pic/errorl.png" width = "370"/>
+  <img src="pic/errorl.PNG" width = "370"/>
 
   考虑到误差不可能为负, 检查代码后发现**遗漏了交叉熵前面的负号**, 已改正。
 
@@ -62,7 +62,7 @@ h = exp / exp.sum(axis = 1)
 
 训练过程如下图 : 
 
-<img src="pic/bestl.png" width = "280"/>      <img src="pic/besta.png" width = "280"/>
+<img src="pic/bestl.PNG" width = "280"/>      <img src="pic/besta.PNG" width = "280"/>
 
 
 
@@ -80,7 +80,7 @@ h = exp / exp.sum(axis = 1)
 diff_W = -1 * self.learningRate * (layer.grad_W + self.weightDecay * layer.W)
 ```
 
-<img src="errorMLP.png" width = "370"/>
+<img src="errorMLP.PNG" width = "370"/>
 
 后来才发现此写法 **diff_W 为函数中的临时变量, 没有被储存下来 , 故不会进行权值更新**
 
@@ -117,11 +117,11 @@ diff_W = -1 * self.learningRate * (layer.grad_W + self.weightDecay * layer.W)
 
 ##### Training by Euclidean Loss
 
-<img src="pic/loss1.png" width = "280"/> <img src="pic/accuracy1.png" width = "280"/>
+<img src="pic/loss1.PNG" width = "280"/> <img src="pic/accuracy1.PNG" width = "280"/>
 
 ##### Training by SoftmaxCrossEntropy Loss
 
-<img src="pic/loss2.png" width = "280"/> <img src="pic/accuracy2.png" width = "280"/>
+<img src="pic/loss2.PNG" width = "280"/> <img src="pic/accuracy2.PNG" width = "280"/>
 
 
 
@@ -142,11 +142,11 @@ diff_W = -1 * self.learningRate * (layer.grad_W + self.weightDecay * layer.W)
 
 ##### Training with momentum by Euclidean Loss
 
-<img src="pic/ml1.png" width = "280"/> <img src="pic/ma1.png" width = "280"/>
+<img src="pic/ml1.PNG" width = "280"/> <img src="pic/ma1.PNG" width = "280"/>
 
 ##### Training with momentum by SoftmaxCrossEntropy Loss
 
-<img src="pic/ml2.png" width = "280"/> <img src="pic/ma2.png" width = "280"/>
+<img src="pic/ml2.PNG" width = "280"/> <img src="pic/ma2.PNG" width = "280"/>
 
 
 
@@ -179,7 +179,7 @@ diff_W = -1 * self.learningRate * (layer.grad_W + self.weightDecay * layer.W)
 |   One Layer    |    0.0242     |      0.9954       |     0.0735      |       0.9806        |      0.9779      |
 |   Two Layer    |    0.0028     |    **1.0000**     |     0.0779      |       0.9818        |    **0.9799**    |
 
-<img src="pic/loss3.png" width = "280"/>        <img src="pic/accuracy3.png" width = "280"/>
+<img src="pic/loss3.PNG" width = "280"/>        <img src="pic/accuracy3.PNG" width = "280"/>
 
 
 
