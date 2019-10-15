@@ -32,7 +32,7 @@ h = exp / exp.sum(axis = 1)
 
 + 符号问题 : 一开始代码 **写错了** , 发现 loss 训练出来是负数 , 且与accuracy为正相关 :
 
-  <img src="errorl.png" width = "370"/>
+  <img src="pic/errorl.png" width = "370"/>
 
   考虑到误差不可能为负, 检查代码后发现**遗漏了交叉熵前面的负号**, 已改正。
 
