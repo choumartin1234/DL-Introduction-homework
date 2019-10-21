@@ -19,7 +19,7 @@ class SGD():
                 momentum = 0.5 # apply momentum method for better result
                 # W = W - eta * (grad + lambda * W) + momentum * diff_W
                 layer.diff_W = -1 * self.learningRate * (layer.grad_W + self.weightDecay * layer.W) + layer.diff_W * momentum
-                layer.diff_b = -1 * self.learningRate * (layer.grad_b + self.weightDecay * layer.b) + layer.diff_b * momentum
+                layer.diff_b = -1 * self.learningRate * layer.grad_b + layer.diff_b * momentum  # no weight decay on bias
                 ############################################################################
 
                 # Weight update

@@ -198,3 +198,7 @@ diff_W = -1 * self.learningRate * (layer.grad_W + self.weightDecay * layer.W)
 + 双层隐藏层比单层隐藏层 : 收敛稍快 , 效果好一点点 （无明显区别）
 
   
+
+##### 更新 : 作业得分与反馈 
+
+10/10. There is no weight decay on bias $b$ , Fixed.
