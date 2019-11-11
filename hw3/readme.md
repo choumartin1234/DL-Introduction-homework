@@ -115,7 +115,7 @@
 
 图形绘制如下 :
 
-![](pic/loss.PNG)
+![](pic/Loss.PNG)
 
 ![](pic/acc.PNG)
 
