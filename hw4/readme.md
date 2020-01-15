@@ -80,9 +80,9 @@ $dropout$ 的值预设0.5
 
 取每10个epoch的平均值, Loss 与 Acc作图如下 :
 
-![](pic\loss.PNG)
+![](pic\Loss.PNG)
 
-![](pic\acc.PNG)
+![](pic\Acc.PNG)
 
 小结 :  取 $\eta = 0.001$ 时训练比较不容易过拟合, 有大约 **41%** 的准确度
 
