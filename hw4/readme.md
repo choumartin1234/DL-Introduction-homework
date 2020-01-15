@@ -80,9 +80,9 @@ $dropout$ 的值预设0.5
 
 取每10个epoch的平均值, Loss 与 Acc作图如下 :
 
-![](pic\Loss.PNG)
+![](pic/Loss.PNG)
 
-![](pic\Acc.PNG)
+![](pic/Acc.PNG)
 
 小结 :  取 $\eta = 0.001$ 时训练比较不容易过拟合, 有大约 **41%** 的准确度
 
@@ -98,9 +98,9 @@ $dropout$ 的值预设0.5
 
 取每10个epoch的平均值, 并与单向LSTM的值作对比, Loss 与 Acc作图如下 :
 
-![](pic\biLoss.PNG)
+![](pic/biLoss.PNG)
 
-![](pic\biAcc.PNG)
+![](pic/biAcc.PNG)
 
 小结 :  双向LSTM比单向LSTM的效果还差且更容易过拟合, 推测因为 **数据集太小**
 
